@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds */
+  --bg-primary:     #FAF8F5; /* warm ivory — main page background */
+  --bg-white:       #FFFFFF; /* pure white — card backgrounds */
+  --bg-amber-wash:  #FEF3C7; /* pale amber — section tint, badge backgrounds */
+  --bg-amber-light: #FDE68A; /* amber 200 — borders, dividers */
+
+  /* Text */
+  --text-primary:   #1C1917; /* stone 900 — headings, body */
+  --text-secondary: #57534E; /* stone 500 — subheadings, captions */
+  --text-muted:     #A8A29E; /* stone 400 — placeholder, metadata */
+  --text-amber:     #D97706; /* amber 700 — amber text on white */
+
+  /* Accent */
+  --amber-400:      #FBBF24; /* light amber — subtle highlights */
+  --amber-500:      #F59E0B; /* primary amber — buttons, badges, icons */
+  --amber-600:      #D97706; /* dark amber — hover states, text */
+  --amber-700:      #B45309; /* darkest amber — borders on colored bg */
+
+  /* Semantic */
+  --success:        #10B981; /* emerald — verified, healthy */
+  --danger:         #EF4444; /* red — counterfeit, alert */
+  --warning:        #F97316; /* orange — alert, borderline */
+  --info:           #3B82F6; /* blue — info links, blockchain explorer */
+
+  /* Shadows */
+  --shadow-card:    4px 4px 0px rgba(28, 25, 23, 1);
+  --shadow-hover:   6px 6px 0px rgba(245, 158, 11, 1);
+  --shadow-strong:  8px 8px 0px rgba(28, 25, 23, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  /* Darker opacity (0.12) to make it highly visible on the base layer */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0-2.4L54 49.2V17.6L28 2.4 2 17.6v31.6L28 63.6zM28 34L14 26v-8l14-8 14 8v8L28 34z' fill='%231C1917' fill-opacity='0.12'/%3E%3C/svg%3E");
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Animations from DESIGN.md */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+.float { animation: float 3s ease-in-out infinite; }
+.float-delay { animation: float 3s ease-in-out infinite 1.5s; }
+
+@keyframes scan {
+  0%   { top: 5%; opacity: 1; }
+  100% { top: 90%; opacity: 0.4; }
+}
+.scan-line {
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #F59E0B, transparent);
+  animation: scan 2s ease-in-out infinite alternate;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.2);
+}
+
+@keyframes honeycomb-pulse {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+.honeycomb-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0-2.4L54 49.2V17.6L28 2.4 2 17.6v31.6L28 63.6zM28 34L14 26v-8l14-8 14 8v8L28 34z' fill='%23F59E0B' fill-opacity='0.15'/%3E%3C/svg%3E");
+}
+
+.honeycomb-dark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0-2.4L54 49.2V17.6L28 2.4 2 17.6v31.6L28 63.6zM28 34L14 26v-8l14-8 14 8v8L28 34z' fill='%231C1917' fill-opacity='0.4'/%3E%3C/svg%3E");
+}
+
+.honeycomb-pulse {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0-2.4L54 49.2V17.6L28 2.4 2 17.6v31.6L28 63.6zM28 34L14 26v-8l14-8 14 8v8L28 34z' fill='%23F59E0B' fill-opacity='0.25'/%3E%3C/svg%3E");
+  animation: honeycomb-pulse 4s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #F59E0B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D97706;
+}
+
+.hazard-stripes-red {
+  background: repeating-linear-gradient(
+    45deg,
+    #DC2626,
+    #DC2626 10px,
+    #991B1B 10px,
+    #991B1B 20px
+  );
+}
+
+.hazard-stripes-amber {
+  background: repeating-linear-gradient(
+    45deg,
+    #F59E0B,
+    #F59E0B 10px,
+    #1C1917 10px,
+    #1C1917 20px
+  );
+}
