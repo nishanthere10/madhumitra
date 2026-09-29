@@ -73,7 +73,7 @@ export default function HarvestTab() {
           </div>
 
           {/* Plausibility Score */}
-          <div className="bg-amber-50/80 border-2 border-stone-900 p-3.5 rounded-sm">
+          <div className="bg-amber-50/80 border border-stone-200 p-3.5 rounded-sm">
             <div className="flex justify-between items-center mb-1">
               <div className="flex items-center gap-1 text-xs font-bold text-stone-800">
                 <BarChart2 size={15} className="text-amber-700" />
@@ -95,7 +95,7 @@ export default function HarvestTab() {
             <button
               onClick={handleConfirm}
               disabled={signing}
-              className="flex-1 bg-amber-500 hover:bg-amber-600 active:scale-98 text-stone-950 font-bold py-2.5 px-3 rounded-sm text-xs flex items-center justify-center gap-1.5 shadow-[2px_2px_0px_#1C1917] transition-all"
+              className="flex-1 bg-amber-500 hover:bg-amber-600 active:scale-98 text-stone-950 font-bold py-2.5 px-3 rounded-sm text-xs flex items-center justify-center gap-1.5 shadow-sm shadow-stone-900/5 transition-all"
             >
               <CheckCircle2 size={16} />
               <span>{signing ? 'Signing (~20ms)...' : 'CONFIRM HARVEST'}</span>
@@ -111,8 +111,8 @@ export default function HarvestTab() {
         </div>
       ) : (
         /* Success State */
-        <div className="bg-emerald-50 border-2 border-stone-900 rounded-sm p-5 text-center space-y-3">
-          <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-[2px_2px_0px_#1C1917]">
+        <div className="bg-emerald-50 border border-stone-200 rounded-sm p-5 text-center space-y-3">
+          <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-sm shadow-stone-900/5">
             <CheckCircle2 size={28} />
           </div>
           <div>
@@ -124,7 +124,7 @@ export default function HarvestTab() {
             </p>
           </div>
 
-          <div className="bg-white p-3 rounded-sm border-2 border-stone-900 text-left text-xs space-y-1.5 font-mono">
+          <div className="bg-white p-3 rounded-sm border border-stone-200 text-left text-xs space-y-1.5 font-mono">
             <div className="flex items-center justify-between text-stone-500 text-[10px]">
               <span>Polygon Amoy Tx</span>
               <span className="text-emerald-700 font-bold">Confirmed</span>

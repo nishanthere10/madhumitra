@@ -26,7 +26,7 @@ export default function QRStep1({ onNext }) {
   return (
     <div className="space-y-4">
       {/* Product Banner */}
-      <div className="bg-amber-500 text-stone-950 p-4 rounded-sm shadow-[2px_2px_0px_#1C1917]">
+      <div className="bg-amber-500 text-stone-950 p-4 rounded-sm shadow-sm shadow-stone-900/5">
         <div className="flex items-center gap-2 mb-1">
           <Package size={20} className="text-stone-950" />
           <span className="text-[10px] font-extrabold uppercase tracking-wider text-amber-950">
@@ -77,7 +77,7 @@ export default function QRStep1({ onNext }) {
       </div>
 
       {/* NABL Lab Certificate Summary */}
-      <div className="bg-white border-2 border-stone-900 rounded-sm p-3.5 shadow-2xs">
+      <div className="bg-white border border-stone-200 rounded-sm p-3.5 shadow-2xs">
         <div className="flex items-center justify-between border-b border-emerald-100 pb-2 mb-2.5">
           <div className="flex items-center gap-1.5">
             <ShieldCheck size={16} className="text-emerald-600" />
@@ -127,7 +127,7 @@ export default function QRStep1({ onNext }) {
       </div>
 
       {/* Foil Instruction Alert */}
-      <div className="bg-amber-50 border-2 border-stone-900 p-3 rounded-sm flex items-start gap-2.5 text-xs text-amber-950">
+      <div className="bg-amber-50 border border-stone-200 p-3 rounded-sm flex items-start gap-2.5 text-xs text-amber-950">
         <Info size={16} className="text-amber-700 shrink-0 mt-0.5" />
         <p className="leading-snug">
           <strong>Dual-Layer Security:</strong> Outer QR displays public batch data. Scratch the silver foil on your jar label to reveal your unique 6-digit PIN and claim ownership.
@@ -136,7 +136,7 @@ export default function QRStep1({ onNext }) {
 
       <button
         onClick={onNext}
-        className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-stone-950 font-bold py-3 px-4 rounded-sm text-sm flex items-center justify-center gap-2 shadow-[2px_2px_0px_#1C1917] transition-all hover:scale-101 active:scale-98"
+        className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-stone-950 font-bold py-3 px-4 rounded-sm text-sm flex items-center justify-center gap-2 shadow-sm shadow-stone-900/5 transition-all hover:scale-101 active:scale-98"
       >
         <Lock size={16} />
         <span>SCRATCH & ENTER PIN</span>

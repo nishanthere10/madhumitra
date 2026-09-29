@@ -38,7 +38,7 @@ export default function OverviewCards() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100/80 border-2 border-stone-900 px-3 py-1 rounded-full mb-3">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100/80 border border-stone-200 px-3 py-1 rounded-full mb-3">
             Four Cryptographic Guarantees
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight font-sans">
@@ -55,7 +55,7 @@ export default function OverviewCards() {
             return (
               <div
                 key={idx}
-                className="bg-[#FAF8F5] border-2 border-stone-900/80 rounded-sm p-6 shadow-[2px_2px_0px_#1C1917] hover:shadow-[6px_6px_0px_#1C1917] hover:border-amber-400 transition-all group flex flex-col justify-between"
+                className="bg-[#FAF8F5] border border-stone-200/80 rounded-sm p-6 shadow-sm shadow-stone-900/5 hover:shadow-lg shadow-stone-900/5 hover:border-amber-400 transition-all group flex flex-col justify-between"
               >
                 <div>
                   <div className="w-12 h-12 rounded-sm bg-amber-100 text-amber-700 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
@@ -82,10 +82,10 @@ export default function OverviewCards() {
         <div className="text-center">
           <Link
             to="/solution"
-            className="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-amber-400 font-bold px-8 py-3.5 rounded-sm text-sm shadow-[4px_4px_0px_#1C1917] transition-all hover:scale-102"
+            className="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-amber-700 font-bold px-8 py-3.5 rounded-sm text-sm shadow-md shadow-stone-900/5 transition-all hover:scale-102"
           >
             <span>See Full Architecture & Custody Journey</span>
-            <ArrowRight size={18} className="text-amber-400" />
+            <ArrowRight size={18} className="text-amber-700" />
           </Link>
         </div>
       </div>

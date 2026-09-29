@@ -97,7 +97,7 @@ export default function JourneyTimeline() {
     <section className="py-20 bg-[#FAF8F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100/80 border-2 border-stone-900 px-3 py-1 rounded-full mb-3">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100/80 border border-stone-200 px-3 py-1 rounded-full mb-3">
             Chain-of-Custody Lifecycle · Master Spec Phase 3
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight font-sans">
@@ -119,13 +119,13 @@ export default function JourneyTimeline() {
                 onClick={() => setActiveStage(st.step)}
                 className={`flex flex-col items-center text-center p-3.5 rounded-sm border transition-all ${
                   isSelected
-                    ? 'bg-amber-500 text-stone-950 border-amber-600 shadow-[6px_6px_0px_#1C1917] scale-102 font-bold'
-                    : 'bg-white text-stone-700 border-amber-200/80 hover:border-amber-400 hover:bg-amber-50/50 shadow-[2px_2px_0px_#1C1917]'
+                    ? 'bg-amber-500 text-stone-950 border-amber-600 shadow-lg shadow-stone-900/5 scale-102 font-bold'
+                    : 'bg-white text-stone-700 border-amber-200/80 hover:border-amber-400 hover:bg-amber-50/50 shadow-sm shadow-stone-900/5'
                 }`}
               >
                 <div
                   className={`w-9 h-9 rounded-sm flex items-center justify-center mb-2 ${
-                    isSelected ? 'bg-stone-950 text-amber-400' : 'bg-amber-100 text-amber-800'
+                    isSelected ? 'bg-stone-950 text-amber-700' : 'bg-amber-100 text-amber-800'
                   }`}
                 >
                   <Icon size={18} />
@@ -143,7 +143,7 @@ export default function JourneyTimeline() {
 
         {/* Detailed Stage Card */}
         {current && (
-          <div className="bg-white border-2 border-amber-300 rounded-sm p-6 sm:p-8 shadow-[4px_4px_0px_#1C1917]">
+          <div className="bg-white border-2 border-amber-300 rounded-sm p-6 sm:p-8 shadow-md shadow-stone-900/5">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 pb-6 border-b border-stone-100">
               <div>
                 <div className="flex items-center gap-2 text-xs font-bold text-amber-700 uppercase tracking-wider mb-1">
@@ -164,7 +164,7 @@ export default function JourneyTimeline() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6">
               {/* Description */}
               <div className="lg:col-span-5 space-y-4">
-                <div className="bg-amber-50/80 border-2 border-stone-900/80 rounded-sm p-5">
+                <div className="bg-amber-50/80 border border-stone-200/80 rounded-sm p-5">
                   <h4 className="text-xs font-bold text-amber-900 uppercase tracking-wider mb-2">
                     Physical Event Protocol
                   </h4>

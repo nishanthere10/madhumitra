@@ -10,7 +10,7 @@ export default function SectionHeading({
   return (
     <div className={`mb-12 ${isCenter ? 'text-center max-w-3xl mx-auto' : 'text-left'}`}>
       {badge && (
-        <div className="inline-flex items-center gap-2 bg-amber-50 border-2 border-stone-900 rounded-full px-4 py-1.5 mb-4">
+        <div className="inline-flex items-center gap-2 bg-amber-50 border border-stone-200 rounded-full px-4 py-1.5 mb-4">
           <span className="text-amber-600 text-xs font-semibold uppercase tracking-wide">
             {badge}
           </span>

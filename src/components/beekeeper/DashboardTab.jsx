@@ -18,11 +18,11 @@ export default function DashboardTab() {
           <Cpu size={14} /> Hardware Uplink
         </div>
         <div className="grid grid-cols-2 gap-3">
-          <button className="bg-stone-900 text-white font-bold text-xs py-3 border-2 border-stone-900 shadow-[4px_4px_0px_#F59E0B] hover:shadow-[2px_2px_0px_#F59E0B] hover:translate-y-[2px] transition-all flex flex-col items-center justify-center gap-1 active:shadow-none active:translate-y-[4px]">
-            <HardDriveDownload size={16} className="text-amber-500" />
+          <button className="bg-stone-900 text-white font-bold text-xs py-3 border border-stone-200 shadow-md shadow-amber-900/10 hover:shadow-[2px_2px_0px_#F59E0B] hover:translate-y-[2px] transition-all flex flex-col items-center justify-center gap-1 active:shadow-none active:translate-y-[4px]">
+            <HardDriveDownload size={16} className="text-amber-700" />
             SYNC LEDGER
           </button>
-          <button className="bg-amber-500 text-stone-900 font-bold text-xs py-3 border-2 border-stone-900 shadow-[4px_4px_0px_#1C1917] hover:shadow-[2px_2px_0px_#1C1917] hover:translate-y-[2px] transition-all flex flex-col items-center justify-center gap-1 active:shadow-none active:translate-y-[4px]">
+          <button className="bg-amber-500 text-stone-900 font-bold text-xs py-3 border border-stone-200 shadow-md shadow-stone-900/5 hover:shadow-sm shadow-stone-900/5 hover:translate-y-[2px] transition-all flex flex-col items-center justify-center gap-1 active:shadow-none active:translate-y-[4px]">
             <Radio size={16} />
             SCAN BLE
           </button>
@@ -36,8 +36,8 @@ export default function DashboardTab() {
         </div>
         <div className="space-y-3">
           {/* Amber Warning */}
-          <div className="border-2 border-stone-900 shadow-[4px_4px_0px_#1C1917] bg-white">
-            <div className="hazard-stripes-amber h-2 w-full border-b-2 border-stone-900"></div>
+          <div className="border border-stone-200 shadow-md shadow-stone-900/5 bg-white">
+            <div className="hazard-stripes-amber h-2 w-full border-b border-stone-200"></div>
             <div className="p-3">
               <div className="flex items-start gap-2.5">
                 <Thermometer size={18} className="text-stone-900 shrink-0" />
@@ -52,15 +52,15 @@ export default function DashboardTab() {
           </div>
 
           {/* Red Critical */}
-          <div className="border-2 border-stone-900 shadow-[4px_4px_0px_#1C1917] bg-white cursor-pointer hover:bg-stone-50 transition-colors">
-            <div className="hazard-stripes-red h-2 w-full border-b-2 border-stone-900"></div>
+          <div className="border border-stone-200 shadow-md shadow-stone-900/5 bg-white cursor-pointer hover:bg-stone-50 transition-colors">
+            <div className="hazard-stripes-red h-2 w-full border-b border-stone-200"></div>
             <div className="p-3">
               <div className="flex items-start gap-2.5">
                 <Scale size={18} className="text-red-600 shrink-0" />
                 <div className="flex-1">
                   <div className="flex justify-between items-center">
                     <span className="font-black text-red-700 uppercase text-xs tracking-wide">Hive #07: Harvest Ready</span>
-                    <span className="text-[10px] bg-red-600 text-white font-bold px-1.5 py-0.5 border-2 border-stone-900">SIGN TX</span>
+                    <span className="text-[10px] bg-red-600 text-white font-bold px-1.5 py-0.5 border border-stone-200">SIGN TX</span>
                   </div>
                   <p className="text-stone-600 text-[11px] leading-tight mt-1 font-mono">
                     WEIGHT_DROP=4.2KG (02:14AM). PLAUSIBILITY=0.94.
@@ -81,9 +81,9 @@ export default function DashboardTab() {
           <div className="text-[9px] font-mono text-stone-400">NODES: 47/50 ONLINE</div>
         </div>
         
-        <div className="border-2 border-stone-900 shadow-[4px_4px_0px_#1C1917] bg-white overflow-hidden">
+        <div className="border border-stone-200 shadow-md shadow-stone-900/5 bg-white overflow-hidden">
           {/* Header */}
-          <div className="grid grid-cols-6 border-b-2 border-stone-900 bg-stone-100 text-[9px] font-bold text-stone-600 p-2 uppercase tracking-wider font-sans">
+          <div className="grid grid-cols-6 border-b border-stone-200 bg-stone-100 text-[9px] font-bold text-stone-600 p-2 uppercase tracking-wider font-sans">
             <div className="col-span-1">ID</div>
             <div className="col-span-1 text-right">WT(kg)</div>
             <div className="col-span-1 text-right">TMP(°C)</div>

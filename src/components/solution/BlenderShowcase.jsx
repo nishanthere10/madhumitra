@@ -32,10 +32,10 @@ export default function BlenderShowcase() {
 
   return (
     <section className="py-8 bg-white border-b border-amber-100">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Compact Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-6">
-          <div className="inline-flex items-center gap-1.5 bg-amber-50 border-2 border-stone-900 rounded-full px-3 py-1 mb-2">
+          <div className="inline-flex items-center gap-1.5 bg-amber-50 border border-stone-200 rounded-full px-3 py-1 mb-2">
             <Box size={13} className="text-amber-600" />
             <span className="text-amber-800 text-[11px] font-bold uppercase tracking-wide">
               3D Cyber-Physical Simulation
@@ -52,7 +52,7 @@ export default function BlenderShowcase() {
         {/* Compact 3D Video Player Card */}
         <div className="relative rounded-sm overflow-hidden bg-stone-950 border-2 border-amber-300 shadow-[0_4px_20px_rgba(245,158,11,0.12)] group">
           {/* Video Container (Constrained Aspect & Height) */}
-          <div className="relative aspect-video max-h-[600px] w-full flex items-center justify-center bg-black">
+          <div className="relative aspect-video max-h-[800px] w-full flex items-center justify-center bg-black">
             <video
               ref={videoRef}
               src="/blender-3d.mp4"
@@ -75,7 +75,7 @@ export default function BlenderShowcase() {
                   <Sparkles size={12} /> 3D BLENDER CAD
                 </span>
                 <span className="hidden sm:inline-flex items-center gap-1 bg-stone-900 text-amber-300 text-[11px] font-mono px-2.5 py-0.5 rounded-md border border-amber-400">
-                  <Cpu size={12} className="text-amber-400" />
+                  <Cpu size={12} className="text-amber-700" />
                   Langstroth v2.4
                 </span>
               </div>
@@ -124,7 +124,7 @@ export default function BlenderShowcase() {
           <div className="bg-stone-900 px-4 py-3 border-t border-amber-500/20 text-white">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-700 shrink-0">
                   <Box size={14} />
                 </div>
                 <div>
@@ -138,7 +138,7 @@ export default function BlenderShowcase() {
               </div>
 
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-700 shrink-0">
                   <Cpu size={14} />
                 </div>
                 <div>
@@ -152,7 +152,7 @@ export default function BlenderShowcase() {
               </div>
 
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-700 shrink-0">
                   <ShieldCheck size={14} />
                 </div>
                 <div>

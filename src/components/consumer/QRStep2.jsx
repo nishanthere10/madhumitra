@@ -13,7 +13,7 @@ export default function QRStep2({ onVerify, onBack }) {
 
   return (
     <div className="space-y-6 text-center py-2">
-      <div className="w-14 h-14 rounded-sm bg-amber-100 text-amber-600 flex items-center justify-center mx-auto shadow-[2px_2px_0px_#1C1917]">
+      <div className="w-14 h-14 rounded-sm bg-amber-100 text-amber-600 flex items-center justify-center mx-auto shadow-sm shadow-stone-900/5">
         <KeyRound size={28} />
       </div>
 
@@ -39,14 +39,14 @@ export default function QRStep2({ onVerify, onBack }) {
         ))}
       </div>
 
-      <div className="bg-amber-50/80 border-2 border-stone-900 rounded-sm p-3 text-[11px] text-amber-900 max-w-xs mx-auto">
+      <div className="bg-amber-50/80 border border-stone-200 rounded-sm p-3 text-[11px] text-amber-900 max-w-xs mx-auto">
         <span className="font-bold">Anti-Replay Mechanism:</span> Submitting this PIN permanently burns the nonce on Polygon. Once claimed, any subsequent scan of this jar flags an alert.
       </div>
 
       <div className="space-y-2 pt-2">
         <button
           onClick={onVerify}
-          className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-stone-950 font-bold py-3.5 px-4 rounded-sm text-sm flex items-center justify-center gap-2 shadow-[2px_2px_0px_#1C1917] transition-all hover:scale-101 active:scale-98"
+          className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-stone-950 font-bold py-3.5 px-4 rounded-sm text-sm flex items-center justify-center gap-2 shadow-sm shadow-stone-900/5 transition-all hover:scale-101 active:scale-98"
         >
           <ShieldCheck size={18} />
           <span>VERIFY AUTHENTICITY</span>

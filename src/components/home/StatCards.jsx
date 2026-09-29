@@ -52,7 +52,7 @@ export default function StatCards() {
     <section className="py-16 bg-[#FAF8F5] border-b border-amber-100" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 bg-amber-50 border-2 border-stone-900 rounded-full px-4 py-1.5 mb-4">
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-stone-200 rounded-full px-4 py-1.5 mb-4">
             <span className="text-amber-600 text-xs font-semibold uppercase tracking-wide">
               The Honey Crisis & Market Opportunity
             </span>
@@ -79,7 +79,7 @@ export default function StatCards() {
                 style={{ transitionDelay: `${idx * 80}ms` }}
               >
                 <div>
-                  <div className="w-10 h-10 mx-auto mb-3 bg-amber-50 border-2 border-stone-900 rounded-sm flex items-center justify-center">
+                  <div className="w-10 h-10 mx-auto mb-3 bg-amber-50 border border-stone-200 rounded-sm flex items-center justify-center">
                     <Icon size={20} className={s.color} />
                   </div>
                   <div

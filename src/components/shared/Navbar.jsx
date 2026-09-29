@@ -19,7 +19,7 @@ export default function Navbar() {
         
         {/* Brand Emblem */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9 rounded-sm bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 flex items-center justify-center text-stone-950 shadow-[2px_2px_0px_#1C1917] group-hover:scale-105 transition-transform duration-200">
+          <div className="relative w-9 h-9 rounded-sm bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 flex items-center justify-center text-stone-950 shadow-sm shadow-stone-900/5 group-hover:scale-105 transition-transform duration-200">
             <Hexagon fill="#0F172A" color="#F59E0B" strokeWidth={2} size={20} />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-white" />
           </div>
@@ -28,7 +28,7 @@ export default function Navbar() {
               <span className="font-extrabold text-lg tracking-tight text-stone-900 group-hover:text-amber-600 transition-colors font-sans">
                 MadhuMitra
               </span>
-              <span className="text-[10px] font-bold tracking-wider uppercase bg-amber-100 text-amber-900 border-2 border-stone-900 px-1.5 py-0.2 rounded-md font-mono">
+              <span className="text-[10px] font-bold tracking-wider uppercase bg-amber-100 text-amber-900 border border-stone-200 px-1.5 py-0.2 rounded-md font-mono">
                 SIH26021
               </span>
             </div>
@@ -39,7 +39,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden lg:flex items-center gap-1 bg-white border-2 border-stone-900 p-1 rounded-sm shadow-[4px_4px_0px_#1C1917]">
+        <div className="hidden lg:flex items-center gap-1 bg-white border border-stone-200 p-1 rounded-sm shadow-md shadow-stone-900/5">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
@@ -48,7 +48,7 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `px-3 py-1.5 rounded-sm text-xs font-semibold transition-all duration-200 ${
                   isActive
-                    ? 'bg-amber-500 text-stone-950 shadow-[2px_2px_0px_#1C1917]'
+                    ? 'bg-amber-500 text-stone-950 shadow-sm shadow-stone-900/5'
                     : 'text-stone-600 hover:text-amber-700 hover:bg-amber-50/80'
                 }`
               }
@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <Link
             to="/consumer"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-stone-950 font-bold px-4 py-2 rounded-sm text-xs shadow-[4px_4px_0px_#1C1917] hover:shadow-[6px_6px_0px_#1C1917] transition-all hover:scale-105 active:scale-95"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-stone-950 font-bold px-4 py-2 rounded-sm text-xs shadow-md shadow-stone-900/5 hover:shadow-lg shadow-stone-900/5 transition-all hover:scale-105 active:scale-95"
           >
             <ShieldCheck size={15} />
             <span>Verify Honey Jar</span>
@@ -91,7 +91,7 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `block px-4 py-2.5 rounded-sm text-sm font-semibold transition-colors ${
                   isActive
-                    ? 'bg-amber-500 text-stone-950 shadow-[2px_2px_0px_#1C1917]'
+                    ? 'bg-amber-500 text-stone-950 shadow-sm shadow-stone-900/5'
                     : 'text-stone-700 hover:bg-amber-50 hover:text-amber-700'
                 }`
               }
@@ -103,7 +103,7 @@ export default function Navbar() {
             <Link
               to="/consumer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-4 py-2.5 rounded-sm text-sm shadow-[4px_4px_0px_#1C1917]"
+              className="w-full flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-4 py-2.5 rounded-sm text-sm shadow-md shadow-stone-900/5"
             >
               <ShieldCheck size={16} />
               <span>Verify Honey Jar</span>

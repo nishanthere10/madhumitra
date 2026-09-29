@@ -51,7 +51,7 @@ export default function CompetitiveTable() {
     <section className="py-20 bg-[#FAF8F5] border-b border-amber-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border-2 border-stone-900 px-3 py-1 rounded-full mb-3">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border border-stone-200 px-3 py-1 rounded-full mb-3">
             Market Benchmark · Phase 6 Evaluation
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight font-sans">
@@ -62,7 +62,7 @@ export default function CompetitiveTable() {
           </p>
         </div>
 
-        <div className="overflow-x-auto bg-white rounded-sm border-2 border-amber-200 shadow-[4px_4px_0px_#1C1917]">
+        <div className="overflow-x-auto bg-white rounded-sm border-2 border-amber-200 shadow-md shadow-stone-900/5">
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="border-b border-amber-200 bg-amber-50/60 text-xs font-bold text-stone-900 font-sans">

@@ -30,7 +30,7 @@ export default function Navbar() {
           </div>
           <div>
             <span className="text-white font-bold text-lg">HoneyChain</span>
-            <span className="text-amber-400 text-xs block leading-none">MadhuMitra</span>
+            <span className="text-amber-700 text-xs block leading-none">MadhuMitra</span>
           </div>
         </a>
 
@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-6">
           {links.map(l => (
             <a key={l.href} href={l.href}
-              className="text-stone-300 hover:text-amber-400 text-sm font-medium transition-colors duration-200">
+              className="text-stone-300 hover:text-amber-700 text-sm font-medium transition-colors duration-200">
               {l.label}
             </a>
           ))}
@@ -59,7 +59,7 @@ export default function Navbar() {
         <div className="lg:hidden nav-blur border-t border-stone-700 px-6 py-4 flex flex-col gap-4">
           {links.map(l => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)}
-              className="text-stone-300 hover:text-amber-400 font-medium transition-colors">
+              className="text-stone-300 hover:text-amber-700 font-medium transition-colors">
               {l.label}
             </a>
           ))}

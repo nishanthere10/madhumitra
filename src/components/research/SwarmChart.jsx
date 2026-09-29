@@ -17,7 +17,7 @@ export default function SwarmChart() {
     <section className="py-20 bg-[#FAF8F5] border-b border-amber-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider text-red-700 bg-red-100 border-2 border-stone-900 px-3 py-1 rounded-full mb-3">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-red-700 bg-red-100 border border-stone-200 px-3 py-1 rounded-full mb-3">
             Economic Impact · Swarm Prevention
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight font-sans">
@@ -28,7 +28,7 @@ export default function SwarmChart() {
           </p>
         </div>
 
-        <div className="bg-white border-2 border-amber-200 rounded-sm p-6 sm:p-8 shadow-[2px_2px_0px_#1C1917] max-w-4xl mx-auto">
+        <div className="bg-white border-2 border-amber-200 rounded-sm p-6 sm:p-8 shadow-sm shadow-stone-900/5 max-w-4xl mx-auto">
           <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-stone-100 text-xs">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1.5">
@@ -53,7 +53,7 @@ export default function SwarmChart() {
                   <div className="flex justify-between items-center text-xs font-semibold">
                     <span className="text-stone-900 font-bold font-sans">{row.year}</span>
                     {row.note && (
-                      <span className="inline-flex items-center gap-1 text-[10px] font-bold text-red-700 bg-red-50 border-2 border-stone-900 px-2 py-0.5 rounded-full">
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold text-red-700 bg-red-50 border border-stone-200 px-2 py-0.5 rounded-full">
                         <AlertTriangle size={11} />
                         <span>{row.note}</span>
                       </span>

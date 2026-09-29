@@ -8,7 +8,7 @@ export default function DualPillar() {
         
         {/* Section Heading conforming to DESIGN.md */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-amber-50 border-2 border-stone-900 rounded-full px-4 py-1.5 mb-4">
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-stone-200 rounded-full px-4 py-1.5 mb-4">
             <span className="text-amber-700 text-xs font-semibold uppercase tracking-wide">
               Core Cyber-Physical Symbiosis
             </span>
@@ -27,7 +27,7 @@ export default function DualPillar() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
           
           {/* Pillar A: Cryptographic Edge Traceability */}
-          <div className="bg-white rounded-sm border-2 border-amber-300 overflow-hidden shadow-[4px_4px_0px_#1C1917] hover:shadow-[6px_6px_0px_#F59E0B] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-sm border-2 border-amber-300 overflow-hidden shadow-md shadow-stone-900/5 hover:shadow-lg hover:shadow-amber-900/10 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
             <div>
               {/* High-Impact Photographic Header */}
               <div className="relative h-64 sm:h-72 overflow-hidden bg-stone-950">
@@ -40,7 +40,7 @@ export default function DualPillar() {
                 
                 {/* Top Badge */}
                 <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 bg-amber-500 text-stone-950 font-black text-xs px-3 py-1.5 rounded-sm shadow-[6px_6px_0px_#1C1917] font-sans">
+                  <span className="inline-flex items-center gap-1.5 bg-amber-500 text-stone-950 font-black text-xs px-3 py-1.5 rounded-sm shadow-lg shadow-stone-900/5 font-sans">
                     <Cpu size={14} /> PILLAR A
                   </span>
                   <span className="inline-flex items-center gap-1.5 bg-emerald-500 text-white font-mono text-[11px] font-bold px-3 py-1 rounded-full">
@@ -63,7 +63,7 @@ export default function DualPillar() {
               {/* Card Body */}
               <div className="p-7 sm:p-8">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 rounded-lg bg-amber-100 border-2 border-stone-900 flex items-center justify-center text-amber-700">
+                  <div className="w-8 h-8 rounded-lg bg-amber-100 border border-stone-200 flex items-center justify-center text-amber-700">
                     <Link2 size={18} />
                   </div>
                   <h3 className="text-2xl font-bold text-stone-900 font-sans">
@@ -76,7 +76,7 @@ export default function DualPillar() {
                 </p>
 
                 {/* Micro Key Feature Rows */}
-                <div className="space-y-3 mb-6 bg-[#FAF8F5] p-4 rounded-sm border-2 border-stone-900/60">
+                <div className="space-y-3 mb-6 bg-[#FAF8F5] p-4 rounded-sm border border-stone-200">
                   <div className="flex items-start gap-2.5">
                     <CheckCircle2 size={17} className="text-emerald-600 shrink-0 mt-0.5" />
                     <span className="text-xs sm:text-sm text-stone-700 font-medium">
@@ -108,7 +108,7 @@ export default function DualPillar() {
                   {['ESP32-S3', 'HX711 Scale', 'Digital Signature', 'Polygon Amoy', 'Offline Storage (200d)', 'Secure Audit Trail'].map((chip, i) => (
                     <span
                       key={i}
-                      className="text-xs font-mono font-semibold bg-amber-50 text-amber-900 border-2 border-stone-900 px-2.5 py-1 rounded-lg"
+                      className="text-xs font-mono font-semibold bg-amber-50 text-amber-900 border border-stone-200 px-2.5 py-1 rounded-lg"
                     >
                       {chip}
                     </span>
@@ -119,7 +119,7 @@ export default function DualPillar() {
 
             {/* Honest Boundary Footer */}
             <div className="px-7 sm:px-8 pb-7">
-              <div className="bg-amber-50/90 border-2 border-stone-900 rounded-sm p-3.5">
+              <div className="bg-amber-50/90 border border-stone-200 rounded-sm p-3.5">
                 <p className="text-amber-900 text-xs font-medium leading-relaxed">
                   ⚠️ <strong>Boundary:</strong> Proves physical extraction happened & stops artificial volume injection. Does not test chemical purity (Layer 3 NABL lab does that).
                 </p>
@@ -128,7 +128,7 @@ export default function DualPillar() {
           </div>
 
           {/* Pillar B: Smart Beekeeping 3D Vision AI */}
-          <div className="bg-white rounded-sm border-2 border-blue-200 overflow-hidden shadow-[4px_4px_0px_#1C1917] hover:shadow-[6px_6px_0px_#3B82F6] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+          <div className="bg-white rounded-sm border-2 border-blue-200 overflow-hidden shadow-md shadow-stone-900/5 hover:shadow-[6px_6px_0px_#3B82F6] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
             <div>
               {/* High-Impact Photographic Header */}
               <div className="relative h-64 sm:h-72 overflow-hidden bg-stone-950">
@@ -141,7 +141,7 @@ export default function DualPillar() {
                 
                 {/* Top Badge */}
                 <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 bg-blue-600 text-white font-black text-xs px-3 py-1.5 rounded-sm shadow-[6px_6px_0px_#1C1917] font-sans">
+                  <span className="inline-flex items-center gap-1.5 bg-blue-600 text-white font-black text-xs px-3 py-1.5 rounded-sm shadow-lg shadow-stone-900/5 font-sans">
                     <Sparkles size={14} /> PILLAR B
                   </span>
                   <span className="inline-flex items-center gap-1.5 bg-blue-500 text-white font-mono text-[11px] font-bold px-3 py-1 rounded-full">
@@ -153,7 +153,7 @@ export default function DualPillar() {
                 {/* Bottom Overlay Info */}
                 <div className="absolute bottom-4 left-5 right-5 text-white">
                   <div className="text-sm font-bold font-mono text-blue-300 mb-0.5">
-                    Smartphone AI 3D Comb Reconstruction
+                    Edge Vision AI 3D Comb Reconstruction
                   </div>
                   <div className="text-xs text-stone-300 font-medium">
                     Runs offline on Android via lightweight ONNX / TFLite runtime
@@ -173,7 +173,7 @@ export default function DualPillar() {
                 </div>
 
                 <p className="text-stone-600 text-sm sm:text-base leading-relaxed mb-6 font-normal">
-                  The beekeeper takes a quick photo of an extracted frame. The on-device vision model reconstructs 3D cell depth, checks wax capping completeness (&gt;85% required), and flags early queen loss or swarm risks 3–5 days in advance.
+                  An optical scan is taken of an extracted frame. The on-device vision model reconstructs 3D cell depth, checks wax capping completeness (&gt;85% required), and flags early queen loss or swarm risks 3–5 days in advance.
                 </p>
 
                 {/* Micro Key Feature Rows */}

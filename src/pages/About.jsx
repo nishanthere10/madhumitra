@@ -16,7 +16,10 @@ import PageHero from '../components/shared/PageHero'
 
 export default function About() {
   return (
-    <main className="min-h-screen pb-20">
+    <main className="min-h-screen pb-20 relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <img src="/images/bg1.svg" className="absolute top-80 -right-20 w-[500px] opacity-[0.07] pointer-events-none transform -rotate-45" alt="" />
+      <img src="/images/bg4.svg" className="absolute top-1/2 -left-40 w-96 opacity-10 pointer-events-none transform rotate-12" alt="" />
       <PageHero
         icon={Users}
         badgeText="Smart India Hackathon 2026 · SIH26021"
@@ -27,7 +30,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 space-y-16">
         
         {/* SHG Community Banner with Real Photo */}
-        <div className="bg-white rounded-sm overflow-hidden border-2 border-amber-200 shadow-[6px_6px_0px_#1C1917] grid grid-cols-1 lg:grid-cols-12 items-center">
+        <div className="bg-white rounded-sm overflow-hidden border-2 border-amber-200 shadow-lg shadow-stone-900/5 grid grid-cols-1 lg:grid-cols-12 items-center">
           <div className="lg:col-span-6 relative h-80 lg:h-full min-h-[340px] bg-stone-900 overflow-hidden">
             <img
               src="/images/shg_farmers.jpg"
@@ -65,7 +68,7 @@ export default function About() {
         </div>
 
         {/* Cooperative Market Direct Sales Photo Block */}
-        <div className="bg-[#FAF8F5] border-2 border-amber-200 rounded-sm p-6 sm:p-8 shadow-[2px_2px_0px_#1C1917] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="bg-[#FAF8F5] border-2 border-amber-200 rounded-sm p-6 sm:p-8 shadow-sm shadow-stone-900/5 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 space-y-3">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full">
               <Store size={14} className="text-amber-700" />
@@ -88,7 +91,7 @@ export default function About() {
               </li>
             </ul>
           </div>
-          <div className="lg:col-span-5 rounded-sm overflow-hidden shadow-[6px_6px_0px_#1C1917] border-2 border-white">
+          <div className="lg:col-span-5 rounded-sm overflow-hidden shadow-lg shadow-stone-900/5 border-2 border-white">
             <img
               src="/images/farmer_market.jpg"
               alt="Farmer owned cooperative store selling certified honey directly to happy customers"
@@ -100,7 +103,7 @@ export default function About() {
         {/* 4 Alignment Pillars */}
         <div>
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border-2 border-stone-900 px-3 py-1 rounded-full mb-2 inline-block">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border border-stone-200 px-3 py-1 rounded-full mb-2 inline-block">
               Statutory Alignment
             </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-stone-900 font-sans">
@@ -109,7 +112,7 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white border-2 border-stone-900 rounded-sm p-6 shadow-[2px_2px_0px_#1C1917] flex items-start gap-4">
+            <div className="bg-white border border-stone-200 rounded-sm p-6 shadow-sm shadow-stone-900/5 flex items-start gap-4">
               <div className="w-12 h-12 rounded-sm bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
                 <Building size={24} />
               </div>
@@ -123,7 +126,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="bg-white border-2 border-stone-900 rounded-sm p-6 shadow-[2px_2px_0px_#1C1917] flex items-start gap-4">
+            <div className="bg-white border border-stone-200 rounded-sm p-6 shadow-sm shadow-stone-900/5 flex items-start gap-4">
               <div className="w-12 h-12 rounded-sm bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
                 <Shield size={24} />
               </div>
@@ -137,7 +140,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="bg-white border-2 border-stone-900 rounded-sm p-6 shadow-[2px_2px_0px_#1C1917] flex items-start gap-4">
+            <div className="bg-white border border-stone-200 rounded-sm p-6 shadow-sm shadow-stone-900/5 flex items-start gap-4">
               <div className="w-12 h-12 rounded-sm bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
                 <Globe size={24} />
               </div>
@@ -151,7 +154,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="bg-white border-2 border-stone-900 rounded-sm p-6 shadow-[2px_2px_0px_#1C1917] flex items-start gap-4">
+            <div className="bg-white border border-stone-200 rounded-sm p-6 shadow-sm shadow-stone-900/5 flex items-start gap-4">
               <div className="w-12 h-12 rounded-sm bg-purple-100 text-purple-700 flex items-center justify-center shrink-0">
                 <Lock size={24} />
               </div>
@@ -168,7 +171,7 @@ export default function About() {
         </div>
 
         {/* Deliverables Cards */}
-        <div className="bg-[#FAF8F5] border-2 border-amber-200 rounded-sm p-8 shadow-[2px_2px_0px_#1C1917]">
+        <div className="bg-[#FAF8F5] border-2 border-amber-200 rounded-sm p-8 shadow-sm shadow-stone-900/5">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-amber-200 pb-4">
             <div>
               <h4 className="text-xl font-bold text-stone-900 font-sans">

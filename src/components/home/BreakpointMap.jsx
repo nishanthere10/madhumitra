@@ -55,7 +55,7 @@ export default function BreakpointMap() {
     <section className="py-20 bg-[#FAF8F5] border-b border-amber-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider text-red-700 bg-red-100/70 border-2 border-stone-900 px-3 py-1 rounded-full mb-3">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-red-700 bg-red-100/70 border border-stone-200 px-3 py-1 rounded-full mb-3">
             System Breakdown · Plain-English Analysis
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight font-sans">
@@ -78,8 +78,8 @@ export default function BreakpointMap() {
                   onClick={() => setSelectedBp(bp.id)}
                   className={`cursor-pointer rounded-sm p-5 border transition-all duration-200 ${
                     isSelected
-                      ? 'bg-white border-amber-500 shadow-[6px_6px_0px_#1C1917] transtone-x-1.5'
-                      : 'bg-white/80 border-stone-200/80 hover:border-amber-300 hover:bg-white shadow-[2px_2px_0px_#1C1917]'
+                      ? 'bg-white border-amber-500 shadow-lg shadow-stone-900/5 transtone-x-1.5'
+                      : 'bg-white/80 border-stone-200/80 hover:border-amber-300 hover:bg-white shadow-sm shadow-stone-900/5'
                   }`}
                 >
                   <div className="flex items-start gap-3.5">
@@ -114,7 +114,7 @@ export default function BreakpointMap() {
           </div>
 
           {/* Right: Interactive Attack vs Fix Inspector with Real Cooperative Photo */}
-          <div className="lg:col-span-6 bg-white border-2 border-amber-200 rounded-sm p-6 sm:p-8 shadow-[4px_4px_0px_#1C1917]">
+          <div className="lg:col-span-6 bg-white border-2 border-amber-200 rounded-sm p-6 sm:p-8 shadow-md shadow-stone-900/5">
             <div className="flex items-center justify-between border-b border-stone-100 pb-4 mb-6">
               <div className="flex items-center gap-2">
                 <AlertOctagon size={20} className="text-red-500" />
@@ -131,7 +131,7 @@ export default function BreakpointMap() {
                 Supply Chain Steps
               </div>
               <div className="grid grid-cols-4 gap-1.5 text-center text-[11px] font-bold">
-                <div className="p-2 rounded-lg bg-amber-100 text-amber-900 border-2 border-stone-900">
+                <div className="p-2 rounded-lg bg-amber-100 text-amber-900 border border-stone-200">
                   <span>1. Hive</span>
                 </div>
                 <div className={`p-2 rounded-lg border ${selectedBp === 1 ? 'bg-red-100 text-red-800 border-red-300' : 'bg-white text-stone-600'}`}>
@@ -149,7 +149,7 @@ export default function BreakpointMap() {
             {/* Selected Breakdown */}
             {breakpoints.filter(b => b.id === selectedBp).map(bp => (
               <div key={bp.id} className="space-y-4">
-                <div className="bg-red-50 border-2 border-stone-900 rounded-sm p-4">
+                <div className="bg-red-50 border border-stone-200 rounded-sm p-4">
                   <span className="text-xs font-bold text-red-900 uppercase tracking-wide block mb-1">
                     How The Scam Works:
                   </span>
@@ -158,7 +158,7 @@ export default function BreakpointMap() {
                   </p>
                 </div>
 
-                <div className="bg-emerald-50 border-2 border-stone-900 rounded-sm p-4">
+                <div className="bg-emerald-50 border border-stone-200 rounded-sm p-4">
                   <div className="flex items-center gap-1.5 text-emerald-900 text-xs font-bold uppercase tracking-wide mb-1">
                     <ShieldCheck size={16} className="text-emerald-600" />
                     <span>MadhuMitra Direct Fix:</span>

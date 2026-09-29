@@ -18,7 +18,10 @@ export default function ConsumerApp() {
   const [isCounterfeitMode, setIsCounterfeitMode] = useState(false)
 
   return (
-    <main className="min-h-screen pb-20">
+    <main className="min-h-screen pb-20 relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <img src="/images/bg2.svg" className="absolute top-64 -left-24 w-80 opacity-10 pointer-events-none transform -rotate-12" alt="" />
+      <img src="/images/bg3.svg" className="absolute top-1/2 -right-32 w-96 opacity-10 pointer-events-none transform rotate-12" alt="" />
       <PageHero
         icon={ShieldCheck}
         badgeText="Dual-Layer Anti-Clone QR"
@@ -28,7 +31,7 @@ export default function ConsumerApp() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
         {/* Demo Mode Toggle Card */}
-        <div className="bg-white border-2 border-stone-900 rounded-sm p-4 mb-8 shadow-[2px_2px_0px_#1C1917] flex flex-col sm:flex-row justify-between items-center gap-4 max-w-4xl mx-auto">
+        <div className="bg-white border border-stone-200 rounded-sm p-4 mb-8 shadow-sm shadow-stone-900/5 flex flex-col sm:flex-row justify-between items-center gap-4 max-w-4xl mx-auto">
           <div>
             <span className="text-xs font-bold text-amber-900 uppercase tracking-wider block">
               SIH Presentation Demo Mode
@@ -65,14 +68,14 @@ export default function ConsumerApp() {
           
           {/* Left Column: Real Physical Honey Jar & Dual QR Security Seal */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="bg-white rounded-sm overflow-hidden border-2 border-amber-200 shadow-[4px_4px_0px_#1C1917]">
+            <div className="bg-white rounded-sm overflow-hidden border-2 border-amber-200 shadow-md shadow-stone-900/5">
               <div className="relative h-72 sm:h-80 overflow-hidden bg-amber-50">
                 <img
                   src="/images/honey_jar.jpg"
                   alt="Authentic 500g Glass Honey Jar with Dual QR Security Seal"
                   className="w-full h-full object-cover object-center hover:scale-103 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3 bg-amber-500 text-stone-950 text-xs font-bold px-3 py-1 rounded-full shadow-[4px_4px_0px_#1C1917]">
+                <div className="absolute top-3 left-3 bg-amber-500 text-stone-950 text-xs font-bold px-3 py-1 rounded-full shadow-md shadow-stone-900/5">
                   Physical Jar Security
                 </div>
               </div>
@@ -90,7 +93,7 @@ export default function ConsumerApp() {
             </div>
 
             {/* NABL Lab Anchor Highlight */}
-            <div className="bg-white rounded-sm p-4 border-2 border-stone-900 flex items-center gap-3.5 shadow-2xs">
+            <div className="bg-white rounded-sm p-4 border border-stone-200 flex items-center gap-3.5 shadow-2xs">
               <img
                 src="/images/lab_testing.jpg"
                 alt="NABL accredited laboratory testing honey purity"
@@ -115,7 +118,7 @@ export default function ConsumerApp() {
                 <div
                   className={`w-10 h-10 rounded-full flex items-center justify-center border-2 transition-all ${
                     step === 1
-                      ? 'bg-amber-500 border-amber-600 text-stone-950 shadow-[4px_4px_0px_#1C1917] scale-105'
+                      ? 'bg-amber-500 border-amber-600 text-stone-950 shadow-md shadow-stone-900/5 scale-105'
                       : step > 1
                       ? 'bg-emerald-500 border-emerald-600 text-white'
                       : 'bg-white border-stone-300 text-stone-400'
@@ -132,7 +135,7 @@ export default function ConsumerApp() {
                 <div
                   className={`w-10 h-10 rounded-full flex items-center justify-center border-2 transition-all ${
                     step === 2
-                      ? 'bg-amber-500 border-amber-600 text-stone-950 shadow-[4px_4px_0px_#1C1917] scale-105'
+                      ? 'bg-amber-500 border-amber-600 text-stone-950 shadow-md shadow-stone-900/5 scale-105'
                       : step > 2
                       ? 'bg-emerald-500 border-emerald-600 text-white'
                       : 'bg-white border-stone-300 text-stone-400'
@@ -150,8 +153,8 @@ export default function ConsumerApp() {
                   className={`w-10 h-10 rounded-full flex items-center justify-center border-2 transition-all ${
                     step === 3
                       ? isCounterfeitMode
-                        ? 'bg-red-500 border-red-600 text-white shadow-[4px_4px_0px_#1C1917] scale-105'
-                        : 'bg-emerald-500 border-emerald-600 text-white shadow-[4px_4px_0px_#1C1917] scale-105'
+                        ? 'bg-red-500 border-red-600 text-white shadow-md shadow-stone-900/5 scale-105'
+                        : 'bg-emerald-500 border-emerald-600 text-white shadow-md shadow-stone-900/5 scale-105'
                       : 'bg-white border-stone-300 text-stone-400'
                   }`}
                 >
@@ -162,7 +165,7 @@ export default function ConsumerApp() {
             </div>
 
             {/* Phone Frame */}
-            <div className="max-w-md mx-auto bg-stone-900 p-4 sm:p-5 rounded-[40px] shadow-[12px_12px_0px_#1C1917] border-4 border-stone-900">
+            <div className="max-w-md mx-auto bg-stone-900 p-4 sm:p-5 rounded-[40px] shadow-xl shadow-stone-900/5 border border-stone-200">
               <div className="w-28 h-3.5 bg-stone-950 rounded-full mx-auto mb-3"></div>
 
               <div className="bg-[#FAF8F5] rounded-[28px] p-4 sm:p-5 border border-stone-200 min-h-[520px] flex flex-col justify-between shadow-[inset_4px_4px_0px_rgba(28,25,23,0.1)]">

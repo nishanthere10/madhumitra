@@ -67,7 +67,7 @@ export default function LayerCards() {
         
         {/* Section Heading conforming to DESIGN.md */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-amber-50 border-2 border-stone-900 rounded-full px-4 py-1.5 mb-4">
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-stone-200 rounded-full px-4 py-1.5 mb-4">
             <span className="text-amber-700 text-xs font-semibold uppercase tracking-wide">
               Defense-in-Depth Model · Zero Jargon
             </span>
@@ -88,7 +88,7 @@ export default function LayerCards() {
             return (
               <div
                 key={layer.num}
-                className="bg-[#FAF8F5] border-2 border-amber-200 rounded-sm overflow-hidden shadow-[4px_4px_0px_#1C1917] hover:shadow-[6px_6px_0px_#F59E0B] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
+                className="bg-[#FAF8F5] border-2 border-amber-200 rounded-sm overflow-hidden shadow-md shadow-stone-900/5 hover:shadow-lg hover:shadow-amber-900/10 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Large High-Resolution Image Header (Expanded Size per User Feedback) */}
@@ -102,7 +102,7 @@ export default function LayerCards() {
                     
                     {/* Top Layer Badge */}
                     <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                      <span className="inline-flex items-center gap-1.5 bg-amber-500 text-stone-950 font-black text-sm px-3.5 py-1.5 rounded-sm shadow-[6px_6px_0px_#1C1917] font-sans">
+                      <span className="inline-flex items-center gap-1.5 bg-amber-500 text-stone-950 font-black text-sm px-3.5 py-1.5 rounded-sm shadow-lg shadow-stone-900/5 font-sans">
                         LAYER 0{layer.num}
                       </span>
                       <span className="bg-stone-900 text-amber-300 text-xs font-mono font-bold px-3 py-1 rounded-full border border-amber-400">
@@ -113,7 +113,7 @@ export default function LayerCards() {
                     {/* Bottom Image Caption */}
                     <div className="absolute bottom-4 left-5 right-5 text-white">
                       <div className="flex items-center gap-2">
-                        <Icon size={18} className="text-amber-400" />
+                        <Icon size={18} className="text-amber-700" />
                         <h3 className="text-xl sm:text-2xl font-bold text-white font-sans">
                           {layer.title}
                         </h3>
@@ -141,7 +141,7 @@ export default function LayerCards() {
 
                 {/* Honest Boundary Alert Box */}
                 <div className="px-7 sm:px-8 pb-7">
-                  <div className="bg-amber-50/95 border-2 border-stone-900/90 rounded-sm p-4 flex items-start gap-3 text-xs sm:text-sm text-amber-950">
+                  <div className="bg-amber-50/95 border border-stone-200 rounded-sm p-4 flex items-start gap-3 text-xs sm:text-sm text-amber-950">
                     <AlertCircle size={18} className="text-amber-700 shrink-0 mt-0.5" />
                     <span className="leading-relaxed font-medium">{layer.boundary}</span>
                   </div>

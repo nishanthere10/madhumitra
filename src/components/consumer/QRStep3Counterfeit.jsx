@@ -4,8 +4,8 @@ import { ShieldX, CalendarDays, MapPin, Phone, Download, RefreshCw, AlertTriangl
 export default function QRStep3Counterfeit({ onReset }) {
   return (
     <div className="space-y-4">
-      <div className="bg-red-50 border-2 border-red-500 rounded-sm p-5 text-center shadow-[2px_2px_0px_#1C1917]">
-        <div className="w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center mx-auto mb-3 shadow-[4px_4px_0px_#1C1917] animate-pulse">
+      <div className="bg-red-50 border-2 border-red-500 rounded-sm p-5 text-center shadow-sm shadow-stone-900/5">
+        <div className="w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center mx-auto mb-3 shadow-md shadow-stone-900/5 animate-pulse">
           <ShieldX size={32} />
         </div>
         <h4 className="text-xl font-black text-red-950 font-sans">
@@ -16,7 +16,7 @@ export default function QRStep3Counterfeit({ onReset }) {
         </p>
       </div>
 
-      <div className="bg-white border-2 border-stone-900 rounded-sm p-4 shadow-2xs space-y-2.5 text-xs">
+      <div className="bg-white border border-stone-200 rounded-sm p-4 shadow-2xs space-y-2.5 text-xs">
         <div className="flex items-center gap-2 pb-2 border-b border-stone-100 text-red-700 font-bold">
           <AlertTriangle size={15} />
           <span>Original Nonce Was Already Claimed</span>
@@ -38,7 +38,7 @@ export default function QRStep3Counterfeit({ onReset }) {
           <span className="font-bold text-stone-900">Mumbai, Maharashtra</span>
         </div>
 
-        <div className="bg-red-50/70 p-3 rounded-sm border-2 border-stone-900 text-stone-800 leading-snug">
+        <div className="bg-red-50/70 p-3 rounded-sm border border-stone-200 text-stone-800 leading-snug">
           <strong>The Xerox Attack:</strong> A counterfeit manufacturer photocopied the static outer label and guessed/stole a previously redeemed PIN. Do NOT consume this honey.
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function QRStep3Counterfeit({ onReset }) {
       <div className="space-y-2">
         <button
           onClick={() => alert('FSSAI Grievance Form Opened: Auto-populated with Nonce hash and Merchant GPS.')}
-          className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-sm text-xs flex items-center justify-center gap-2 shadow-[2px_2px_0px_#1C1917] transition-colors"
+          className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-sm text-xs flex items-center justify-center gap-2 shadow-sm shadow-stone-900/5 transition-colors"
         >
           <Phone size={15} />
           <span>REPORT TO FSSAI ENFORCEMENT</span>

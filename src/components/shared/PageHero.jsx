@@ -14,7 +14,7 @@ export default function PageHero({
 
       <div className="relative max-w-5xl mx-auto text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-amber-100/80 border-2 border-stone-900/50 text-amber-900 text-xs font-semibold px-3.5 py-1.5 rounded-full mb-5 shadow-[2px_2px_0px_#1C1917]">
+        <div className="inline-flex items-center gap-2 bg-amber-100/80 border border-stone-200/50 text-amber-900 text-xs font-semibold px-3.5 py-1.5 rounded-full mb-5 shadow-sm shadow-stone-900/5">
           {Icon && <Icon size={15} className="text-amber-700" />}
           <span>{badgeText}</span>
         </div>

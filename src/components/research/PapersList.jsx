@@ -49,7 +49,7 @@ export default function PapersList() {
     <section className="py-16 bg-white border-b border-amber-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100/80 border-2 border-stone-900 px-3 py-1 rounded-full mb-3">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100/80 border border-stone-200 px-3 py-1 rounded-full mb-3">
             Academic Validation · Literature Base
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight font-sans">
@@ -64,7 +64,7 @@ export default function PapersList() {
           {papers.map((p) => (
             <div
               key={p.num}
-              className="bg-[#FAF8F5] border-2 border-stone-900/80 rounded-sm p-6 shadow-2xs hover:border-amber-400 hover:shadow-[2px_2px_0px_#1C1917] transition-all"
+              className="bg-[#FAF8F5] border border-stone-200/80 rounded-sm p-6 shadow-2xs hover:border-amber-400 hover:shadow-sm shadow-stone-900/5 transition-all"
             >
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                 <div className="flex items-start gap-3.5">

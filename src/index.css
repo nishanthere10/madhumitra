@@ -27,9 +27,9 @@
   --info:           #3B82F6; /* blue — info links, blockchain explorer */
 
   /* Shadows */
-  --shadow-card:    4px 4px 0px rgba(28, 25, 23, 1);
-  --shadow-hover:   6px 6px 0px rgba(245, 158, 11, 1);
-  --shadow-strong:  8px 8px 0px rgba(28, 25, 23, 1);
+  --shadow-card:    0 4px 6px -1px rgba(28, 25, 23, 0.05), 0 2px 4px -2px rgba(28, 25, 23, 0.05);
+  --shadow-hover:   0 10px 15px -3px rgba(245, 158, 11, 0.15), 0 4px 6px -4px rgba(245, 158, 11, 0.1);
+  --shadow-strong:  0 20px 25px -5px rgba(28, 25, 23, 0.1), 0 8px 10px -6px rgba(28, 25, 23, 0.1);
 }
 
 * {
@@ -40,7 +40,7 @@ body {
   font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg-primary);
   /* Darker opacity (0.12) to make it highly visible on the base layer */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0-2.4L54 49.2V17.6L28 2.4 2 17.6v31.6L28 63.6zM28 34L14 26v-8l14-8 14 8v8L28 34z' fill='%231C1917' fill-opacity='0.12'/%3E%3C/svg%3E");
+
   color: var(--text-primary);
   margin: 0;
   padding: 0;

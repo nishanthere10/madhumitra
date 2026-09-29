@@ -4,8 +4,8 @@ import { ShieldCheck, Link2, CheckCircle2, Users, RefreshCw } from 'lucide-react
 export default function QRStep3Genuine({ onReset }) {
   return (
     <div className="space-y-4">
-      <div className="bg-emerald-50 border-2 border-emerald-400 rounded-sm p-5 text-center shadow-[2px_2px_0px_#1C1917]">
-        <div className="w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center mx-auto mb-3 shadow-[4px_4px_0px_#1C1917]">
+      <div className="bg-emerald-50 border-2 border-emerald-400 rounded-sm p-5 text-center shadow-sm shadow-stone-900/5">
+        <div className="w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center mx-auto mb-3 shadow-md shadow-stone-900/5">
           <ShieldCheck size={32} />
         </div>
         <h4 className="text-xl font-black text-emerald-950 font-sans">
@@ -54,7 +54,7 @@ export default function QRStep3Genuine({ onReset }) {
         </div>
       </div>
 
-      <div className="bg-amber-50/70 border-2 border-stone-900 rounded-sm p-4 space-y-2 text-xs">
+      <div className="bg-amber-50/70 border border-stone-200 rounded-sm p-4 space-y-2 text-xs">
         <div className="flex items-center gap-2 text-amber-900 font-bold">
           <Users size={16} className="text-amber-700" />
           <span>FPO Cooperative #42 · Sundarbans Cluster</span>

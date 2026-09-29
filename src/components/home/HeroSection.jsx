@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { Leaf, ArrowRight, Smartphone, ShieldCheck, Cpu, Database } from 'lucide-react'
 
 const CAROUSEL_IMAGES = [
-  { src: 'images/apiary_mustard_field.jpg', alt: 'Authentic Indian apiary in a blooming yellow mustard field' },
-  { src: 'images/beekeeper_holding_frame.jpg', alt: 'Indian beekeeper holding a wooden frame covered in bees' },
-  { src: 'images/iot_sensor_beehive.jpg', alt: 'Sleek IoT sensor device attached to a wooden beehive' }
+  { src: '/images/apiary_mustard_field.jpg', alt: 'Authentic Indian apiary in a blooming yellow mustard field' },
+  { src: '/images/beekeeper_holding_frame.jpg', alt: 'Indian beekeeper holding a wooden frame covered in bees' },
+  { src: '/images/iot_sensor_beehive.jpg', alt: 'Sleek IoT sensor device attached to a wooden beehive' }
 ]
 
 export default function HeroSection() {
@@ -26,7 +26,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Headline & Action */}
-          <div className="lg:col-span-7 text-left">
+          <div className="lg:col-span-6 text-left">
 
 
             {/* Title */}
@@ -50,40 +50,40 @@ export default function HeroSection() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
               <Link
-                to="/solution"
-                className="inline-flex items-center justify-center gap-2.5 bg-amber-500 hover:bg-amber-400 text-stone-900 font-bold px-6 py-3.5 rounded-sm text-sm transition-all duration-200 hover:scale-105 shadow-[4px_4px_0px_#1C1917] hover:shadow-[0_4px_12px_rgba(245,158,11,0.3)]"
+                to="/demo/dashboard"
+                className="inline-flex items-center justify-center gap-2.5 bg-amber-500 hover:bg-amber-400 text-stone-900 font-bold px-6 py-3.5 rounded-sm text-sm transition-all duration-200 hover:scale-105 shadow-md shadow-stone-900/5 hover:shadow-lg shadow-stone-900/5"
               >
-                <span>Explore the Solution</span>
+                <span>Explore Demo</span>
                 <ArrowRight size={18} />
               </Link>
               <Link
                 to="/consumer"
-                className="inline-flex items-center justify-center gap-2.5 border-2 border-amber-500 text-amber-700 hover:text-amber-800 hover:bg-amber-50 font-bold px-6 py-3.5 rounded-sm text-sm transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2.5 border border-stone-200 text-stone-900 hover:bg-stone-900 hover:text-white font-bold px-6 py-3.5 rounded-sm text-sm transition-all duration-200 hover:scale-105 shadow-md shadow-stone-900/5"
               >
-                <Smartphone size={18} className="text-amber-600" />
-                <span>Consumer Verify Demo</span>
+                <Smartphone size={18} className="text-amber-600 hover:text-amber-700 transition-colors" />
+                <span>Verify a Honey Lot</span>
               </Link>
             </div>
 
             {/* Pillar Feature Pills */}
             <div className="flex flex-wrap items-center gap-3 text-xs font-semibold text-stone-600">
-              <div className="flex items-center gap-1.5 bg-white border-2 border-stone-900 px-3 py-1.5 rounded-lg shadow-2xs">
+              <div className="flex items-center gap-1.5 bg-white border border-stone-200 px-3 py-1.5 rounded-lg shadow-2xs">
                 <Cpu size={14} className="text-amber-600" />
                 <span>ESP32-S3 Physical Signing</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-white border-2 border-stone-900 px-3 py-1.5 rounded-lg shadow-2xs">
+              <div className="flex items-center gap-1.5 bg-white border border-stone-200 px-3 py-1.5 rounded-lg shadow-2xs">
                 <Database size={14} className="text-amber-600" />
                 <span>Mass-Balance Smart Contract</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-white border-2 border-stone-900 px-3 py-1.5 rounded-lg shadow-2xs">
+              <div className="flex items-center gap-1.5 bg-white border border-stone-200 px-3 py-1.5 rounded-lg shadow-2xs">
                 <ShieldCheck size={14} className="text-emerald-600" />
                 <span>Anti-Clone Scratch QR</span>
               </div>
             </div>
           </div>
           {/* Right Column: Real Apiary Photography Carousel */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative rounded-sm overflow-hidden shadow-[12px_12px_0px_#1C1917] border-4 border-white bg-stone-900 group h-[450px]">
+          <div className="lg:col-span-6 relative">
+            <div className="relative rounded-sm overflow-hidden shadow-xl shadow-stone-900/5 border-4 border-white bg-stone-900 group h-[450px]">
               {CAROUSEL_IMAGES.map((img, idx) => (
                 <img
                   key={idx}

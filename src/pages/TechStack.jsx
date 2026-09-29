@@ -114,7 +114,7 @@ export default function TechStack() {
         {/* Section A: 6 Cards */}
         <div className="mb-20">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border-2 border-stone-900 px-3 py-1 rounded-full mb-3">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border border-stone-200 px-3 py-1 rounded-full mb-3">
               Full System Architecture
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight font-sans">
@@ -131,14 +131,14 @@ export default function TechStack() {
               return (
                 <div
                   key={idx}
-                  className="bg-white border-2 border-amber-200/90 rounded-sm p-7 shadow-[2px_2px_0px_#1C1917] hover:shadow-[6px_6px_0px_#1C1917] hover:border-amber-400 transition-all flex flex-col justify-between"
+                  className="bg-white border-2 border-amber-200/90 rounded-sm p-7 shadow-sm shadow-stone-900/5 hover:shadow-lg shadow-stone-900/5 hover:border-amber-400 transition-all flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-5">
                       <div className="w-12 h-12 rounded-sm bg-amber-100 text-amber-700 flex items-center justify-center shadow-2xs">
                         <Icon size={24} />
                       </div>
-                      <span className="text-[11px] font-bold text-amber-800 bg-amber-50 border-2 border-stone-900 px-2.5 py-1 rounded-full uppercase">
+                      <span className="text-[11px] font-bold text-amber-800 bg-amber-50 border border-stone-200 px-2.5 py-1 rounded-full uppercase">
                         {card.badge}
                       </span>
                     </div>
@@ -165,7 +165,7 @@ export default function TechStack() {
         {/* Section B: Smart Contract Rules */}
         <div className="mb-20">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border-2 border-stone-900 px-3 py-1 rounded-full mb-3">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border border-stone-200 px-3 py-1 rounded-full mb-3">
               Polygon Smart Contract Rules
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight font-sans">
@@ -178,10 +178,10 @@ export default function TechStack() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Rule 1 */}
-            <div className="bg-stone-900 rounded-sm border border-stone-800 overflow-hidden shadow-[6px_6px_0px_#1C1917] flex flex-col justify-between">
+            <div className="bg-stone-900 rounded-sm border border-stone-800 overflow-hidden shadow-lg shadow-stone-900/5 flex flex-col justify-between">
               <div className="bg-stone-950 px-4 py-3 border-b border-stone-800 flex items-center justify-between text-xs text-stone-400 font-mono">
                 <div className="flex items-center gap-2">
-                  <Code2 size={15} className="text-amber-400" />
+                  <Code2 size={15} className="text-amber-700" />
                   <span className="font-semibold text-white">Rule 1: Stop Dilution</span>
                 </div>
                 <span className="text-[10px] text-emerald-400 font-bold">Mass Balance</span>
@@ -206,10 +206,10 @@ require(
             </div>
 
             {/* Rule 2 */}
-            <div className="bg-stone-900 rounded-sm border border-stone-800 overflow-hidden shadow-[6px_6px_0px_#1C1917] flex flex-col justify-between">
+            <div className="bg-stone-900 rounded-sm border border-stone-800 overflow-hidden shadow-lg shadow-stone-900/5 flex flex-col justify-between">
               <div className="bg-stone-950 px-4 py-3 border-b border-stone-800 flex items-center justify-between text-xs text-stone-400 font-mono">
                 <div className="flex items-center gap-2">
-                  <Code2 size={15} className="text-amber-400" />
+                  <Code2 size={15} className="text-amber-700" />
                   <span className="font-semibold text-white">Rule 2: Lock Lab PDF</span>
                 </div>
                 <span className="text-[10px] text-emerald-400 font-bold">Certificate Tamper-Proof</span>
@@ -229,10 +229,10 @@ batches[batchId].labReportHash =
             </div>
 
             {/* Rule 3 */}
-            <div className="bg-stone-900 rounded-sm border border-stone-800 overflow-hidden shadow-[6px_6px_0px_#1C1917] flex flex-col justify-between">
+            <div className="bg-stone-900 rounded-sm border border-stone-800 overflow-hidden shadow-lg shadow-stone-900/5 flex flex-col justify-between">
               <div className="bg-stone-950 px-4 py-3 border-b border-stone-800 flex items-center justify-between text-xs text-stone-400 font-mono">
                 <div className="flex items-center gap-2">
-                  <Code2 size={15} className="text-amber-400" />
+                  <Code2 size={15} className="text-amber-700" />
                   <span className="font-semibold text-white">Rule 3: Single-Use PIN</span>
                 </div>
                 <span className="text-[10px] text-emerald-400 font-bold">Anti-Replay Seal</span>
@@ -257,9 +257,9 @@ claimedCredentials[commitment] = true;`}</pre>
         </div>
 
         {/* Section C: Verified Metrics Grid (3x3) */}
-        <div ref={metricsRef} className="bg-[#FAF8F5] border-2 border-amber-200 rounded-sm p-8 sm:p-10 shadow-[2px_2px_0px_#1C1917]">
+        <div ref={metricsRef} className="bg-[#FAF8F5] border-2 border-amber-200 rounded-sm p-8 sm:p-10 shadow-sm shadow-stone-900/5">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border-2 border-stone-900 px-3 py-1 rounded-full mb-2">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 border border-stone-200 px-3 py-1 rounded-full mb-2">
               Verified Harness Metrics
             </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-stone-900 font-sans">
@@ -268,7 +268,7 @@ claimedCredentials[commitment] = true;`}</pre>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-amber-700 mb-2">
                 <Banknote size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Affordable Hardware</span>
@@ -281,7 +281,7 @@ claimedCredentials[commitment] = true;`}</pre>
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-emerald-600 mb-2">
                 <TrendingUp size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Farmer Price Boost</span>
@@ -294,7 +294,7 @@ claimedCredentials[commitment] = true;`}</pre>
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-amber-700 mb-2">
                 <Zap size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Verification Speed</span>
@@ -307,7 +307,7 @@ claimedCredentials[commitment] = true;`}</pre>
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-amber-700 mb-2">
                 <Wifi size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Offline Flash Storage</span>
@@ -320,7 +320,7 @@ claimedCredentials[commitment] = true;`}</pre>
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-blue-600 mb-2">
                 <Blocks size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Negligible Gas Cost</span>
@@ -333,7 +333,7 @@ claimedCredentials[commitment] = true;`}</pre>
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-amber-700 mb-2">
                 <MapPin size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Target Cooperatives</span>
@@ -346,7 +346,7 @@ claimedCredentials[commitment] = true;`}</pre>
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-purple-600 mb-2">
                 <Lock size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Complete Privacy</span>
@@ -359,7 +359,7 @@ claimedCredentials[commitment] = true;`}</pre>
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-emerald-600 mb-2">
                 <Activity size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Health Proxy Alarms</span>
@@ -372,7 +372,7 @@ claimedCredentials[commitment] = true;`}</pre>
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-sm border-2 border-stone-900/80 shadow-2xs">
+            <div className="bg-white p-5 rounded-sm border border-stone-200/80 shadow-2xs">
               <div className="flex items-center gap-2 text-amber-700 mb-2">
                 <Database size={20} />
                 <span className="text-xs font-bold uppercase text-stone-400">Data Compression</span>

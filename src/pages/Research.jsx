@@ -35,11 +35,11 @@ export default function Research() {
                 When CSE sent identical samples to an advanced laboratory in Germany for <strong>Nuclear Magnetic Resonance (NMR) spectroscopy</strong>, <strong>77% of all samples failed immediately</strong>. MadhuMitra eliminates this loophole by linking hive load-cell data directly to ISO 17025 batch NMR test certificates on a public, verifiable audit trail.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-2">
-                <div className="p-3.5 bg-amber-50 rounded-sm border-2 border-stone-900">
+                <div className="p-3.5 bg-amber-50 rounded-sm border border-stone-200">
                   <div className="text-2xl font-black text-amber-700 font-sans">77%</div>
                   <div className="text-xs text-amber-900 font-medium">NMR Adulteration Failure in CSE Benchmark</div>
                 </div>
-                <div className="p-3.5 bg-emerald-50 rounded-sm border-2 border-stone-900">
+                <div className="p-3.5 bg-emerald-50 rounded-sm border border-stone-200">
                   <div className="text-2xl font-black text-emerald-700 font-sans">₹5–10/kg</div>
                   <div className="text-xs text-emerald-900 font-medium">Cost via FPO Pooled Batch Testing (vs ₹25,000 solo)</div>
                 </div>
@@ -47,9 +47,9 @@ export default function Research() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative rounded-sm overflow-hidden shadow-[6px_6px_0px_#1C1917] border-2 border-stone-900">
+              <div className="relative rounded-sm overflow-hidden shadow-lg shadow-stone-900/5 border border-stone-200">
                 <img
-                  src="images/bee_pollination.jpg"
+                  src="/images/bee_pollination.jpg"
                   alt="Honeybee pollinating mustard flower"
                   className="w-full h-56 object-cover"
                 />
@@ -58,9 +58,9 @@ export default function Research() {
                 </div>
               </div>
 
-              <div className="relative rounded-sm overflow-hidden shadow-[6px_6px_0px_#1C1917] border-2 border-stone-900">
+              <div className="relative rounded-sm overflow-hidden shadow-lg shadow-stone-900/5 border border-stone-200">
                 <img
-                  src="images/lab_testing.jpg"
+                  src="/images/lab_testing.jpg"
                   alt="NABL ISO 17025 Laboratory Testing"
                   className="w-full h-56 object-cover"
                 />
